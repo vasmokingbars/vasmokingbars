@@ -1,5 +1,7 @@
 /* Common styling for all pages */
 
+/* Most of these styles are probably unnecessary since all but the index page/bars list is gone */
+
 body {
 	margin-top: 0;
 }
