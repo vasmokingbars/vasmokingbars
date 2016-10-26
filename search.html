@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Virginia Smoking Bars - Search Bars</title>
+		<link rel="stylesheet" type="text/css" href="style/search.css"></link>
+	    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	    <script type="text/javascript" src="http://prototypejs.org/assets/2009/8/31/prototype.js"></script>
+	    <script type="text/javascript" src="script/common.js"></script>
+	    <script type="text/javascript" src="script/search.js"></script>
+	</head>
+	<body>
+		<!--[if lte IE 7]>
+			<div id="ie7root">
+		<![endif]-->
+		<div id="pageHeader">
+			<!-- I put this here instead of using CSS 'background image' because I want to stretch it all the way across -->
+			<img id="bannerBackdrop" src="img/bannerBackdrop.png" />
+			<a href="index.html">
+				<img id="bannerTextLogo" src="img/bannerText.png" alt="Virginia Smoking Bars" />
+			</a>
+			<div id="menu">
+				<a href="add.html">Add a bar</a>
+				<a href="contact.php.html">Contact us</a>
+				<a href="listing-policy.html">Listing policy</a>
+			</div>
+		</div>
+		<table>
+			<tbody>
+				<tr>
+					<td id="mapCell">
+						<div id="mapCanvas"></div>
+					</td>
+					<td id="searchCell">
+						<form id="basicSearchForm" action="search.html" method="get">
+							<div>
+								<input id="searchInput" name="query" type="text" />
+								<input type="submit" value="Go" />
+							</div>
+							<div id="searchDirections">Address, city or zip</div>
+						</form>
+						<div id="userAddressInfo">
+							<p id="userAddressText"></p>
+						</div>
+						<div id="searchResultsPageControl">
+							<span id="lowResult" class="searchResultsPageControlNumber"></span>
+							to <span id="highResult" class="searchResultsPageControlNumber"></span> of
+							<span id="totalResults" class="searchResultsPageControlNumber"></span> bars
+							<a id="nextPageLink" href="search.html#" onclick="resultsPageForward(); return false">&gt;&gt;</a>
+							<a id="priorPageLink" href="search.html#" onclick="resultsPageBack(); return false">&lt;&lt;</a>
+						</div>
+						<div id="searchResults"></div>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<!--[if lte IE 7]>
+			</div>
+		<![endif]-->
+	</body>
+</html>

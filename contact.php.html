@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Virginia Smoking Bars - Contact Us</title>
+		<link rel="stylesheet" type="text/css" href="style/contact.css"></link>
+		<script type="text/javascript">
+			function focusMainForm() {
+				document.getElementById('userNameInput').focus();
+			}
+		</script>
+	</head>
+	<body onload="focusMainForm()">
+		<!--[if lte IE 7]>
+			<div id="ie7root">
+		<![endif]-->
+		
+		<div id="pageHeader">
+			<!-- I put this here instead of using CSS 'background image' because I want to stretch it all the way across -->
+			<img id="bannerBackdrop" src="img/bannerBackdrop.png" />
+			<a href="index.html">
+				<img id="bannerTextLogo" src="img/bannerText.png" alt="Virginia Smoking Bars" />
+			</a>
+			<div id="menu">
+				<a href="search.html">Find a bar</a>
+				<a href="add.html">Add a bar</a>
+				<a href="listing-policy.html">Listing policy</a>
+			</div>
+		</div>
+		<form id="contactForm" action="http://vasmokingbars.org/sendmail.php" method="post" >
+			<!-- TODO: fix: having the onkeypress event in each input is ugly -->
+			<h2>Contact us</h2>
+			<div id="optionalFields">
+				<label for="userName">Your name (optional)</label>
+				<input id="userNameInput" name="userName" type="text" onkeypress="return event.keyCode !== 13"/>
+				
+				<label for="userEmail">Your email (optional)</label>
+				<input id="userEmailInput" name="userEmail" type="text" onkeypress="return event.keyCode !== 13"/>
+			</div>
+			<div id="requiredFields">
+				<label for="subject">Subject</label>
+				<input id="subjectInput" name="subject" type="text" onkeypress="return event.keyCode !== 13"/>
+				
+				<label for="message">Details</label>
+				<textarea name="message" rows="20" cols="30"></textarea>
+				
+				<input type="submit" value="Send"/>
+			</div>
+		</form>
+		<p>
+			If you provide it, we will use your contact information for replying to you about your input and absolutely nothing else.
+		</p>
+		
+		<!--[if lte IE 7]>
+			</div>
+		<![endif]-->
+	</body>
+</html>

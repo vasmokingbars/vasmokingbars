@@ -1,0 +1,19 @@
+@IMPORT url("main.css");
+
+h2 {
+	margin-top: 1.5em;
+	margin-bottom: 0;
+}
+
+#ie7root h2 {
+	margin-bottom: -1ex;
+}
+
+#ie7root #pageHeader {
+	margin-bottom: 1em;
+}
+
+#pageBody {
+	max-width: 100%;
+	width: 50em;
+}

@@ -1,0 +1,69 @@
+/* For the add bars page */
+
+@IMPORT url("main.css");
+
+form {
+	width: 55em;
+}
+
+#ie7root p {
+	/* If you just give a negative margin-top, the paragraph prevents clicking on 
+	 * the textarea
+	 */
+	position: relative;
+	top: -20em;
+}
+
+#ie7root #requiredFields input[type="text"] {
+	width: 30em;
+}
+
+#ie7root textarea {
+	width: 30em;
+}
+
+input[type="text"] {
+	width: 30em;
+}
+
+input[type="submit"] {
+	display: block;
+	margin-top: 1ex;
+	margin-left: 26em;
+}
+
+label {
+	margin-top: 1ex;
+}
+
+#optionalFields {
+	float: left;
+}
+
+p {
+	clear: left;
+	padding-top: 1em;
+	width: 25em;
+}
+
+#requiredFields {
+	float: right;
+}
+
+#requiredFields input[type="text"] {
+	/* Using 100% rather than an em width lets the subject field width align
+	 * exactly with the message field width.
+	 */
+	width: 100%;
+}
+
+textarea {
+	/* Why browsers display the textarea font differently from a normal input
+	 * box baffles me. This helps, but things still look slightly different
+	 * across browsers, still I consider it acceptable.
+	 */
+	font-family: sans-serif;
+	overflow: auto;
+	height: 20em;
+	width: 100%;
+}

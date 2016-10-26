@@ -1,0 +1,11 @@
+@IMPORT url("main.css");
+@IMPORT url("search-only.css");
+
+#bannerBackdrop {
+	height: auto;
+	position: static;
+}
+
+#pageHeader {
+	height: auto;
+}

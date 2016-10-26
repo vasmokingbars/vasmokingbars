@@ -1,0 +1,132 @@
+/* Common styling for all pages */
+
+body {
+	margin-top: 0;
+}
+
+#bannerBackdrop {
+	height: 6em;
+	width: 102%;
+	margin-left: -1%;
+	position: absolute;
+	z-index: -1;
+}
+
+#bannerTextLogo {
+	height: 85%;
+	max-width: 50%;
+	margin-top: 0.5em;
+	width: 30em;
+}
+
+.hiddenInputs {
+	display: none;
+}
+
+#ie7root #menu {
+	margin-top: -5.5em;
+}
+
+label {
+	display: block;
+	font-size: small;
+}
+
+#mapCanvas {
+	border: thin solid;
+}
+
+#menu {
+	float: right;
+	margin-top: 0.5em;
+	text-align: right;
+}
+
+#menu a {
+	display: block;
+	color: silver;
+}
+
+p {
+	line-height: 1.5em;
+}
+
+p.fancy:first-letter {
+	font-size: xx-large;
+	font-weight: bold;
+}
+
+#pageFooter {
+	font-size: small;
+	margin-top: 10em;
+}
+
+#pageFooter p {
+	font-weight: bold;
+	font-style: italic;
+}
+
+#pageFooter a {
+	margin-right: 1em;
+}
+
+#pageHeader {
+	color: silver;
+	height: 6em;
+}
+
+#pageHeader img {
+	border-style: none;
+}
+
+.placeAddress {
+	font-size: small;
+}
+
+.placeDistance {
+	display: inline;
+	float: right;
+	font-size: small;
+	padding-top: 0.2ex;
+}
+
+.placeGlyph {
+	float: left;
+	margin: 1ex;
+}
+
+.placeLink {
+	display: inline;
+	float: right;
+	font-size: small;
+	padding-top: 0.2ex;
+}
+
+.placeName {
+	font-weight: bold;
+}
+
+.placePhone {
+	font-size: small;
+}
+
+#selectedResult {
+	background-color: yellow;
+}
+
+.searchResult p {
+	line-height: 1em;
+	margin: 0;
+	padding: 1ex;
+}
+
+.searchResult:hover {
+	background-color: lightGray;
+}
+
+td {
+	/* Without this vertical-align, when the search results list is larger than the map,
+	 * the map gets shifted downward.
+	 */ 
+	vertical-align: top;
+}
